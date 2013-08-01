@@ -20,6 +20,7 @@ class AddressToCoords
 	 */
 	public static function resolve($strAddress, $strResolver = 'default')
 	{
+		$strAddress = trim(strtolower($strAddress));
 		$strResolverClass = $GLOBALS['addresstocoords']['resolvers'][$strResolver];
 		$objCoords = \CoordscacheModel::findByTerm($strAddress);
 
