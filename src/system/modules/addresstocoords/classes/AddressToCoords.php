@@ -33,6 +33,7 @@ class AddressToCoords
 
 			if (!is_null($arrResult))
 			{
+				$objCoords->address = $arrResult['address'];
 				$objCoords->lat = $arrResult['lat'];
 				$objCoords->lon = $arrResult['lon'];
 			}

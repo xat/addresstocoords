@@ -33,6 +33,7 @@ class GoogleMapsResolver implements IResolver
 
 		return array
 		(
+			'address' => $objResponse->results[0]->formatted_address,
 			'lat' => $objResponse->results[0]->geometry->location->lat,
 			'lon' => $objResponse->results[0]->geometry->location->lng
 		);
