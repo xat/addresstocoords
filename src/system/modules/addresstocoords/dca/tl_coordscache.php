@@ -44,5 +44,11 @@ $GLOBALS['TL_DCA']['tl_coordscache'] = array
 		(
 			'sql'                     => "double unsigned NOT NULL default '0'"
 		),
+
+		'address' => array
+		(
+			'sql'                     => "varchar(255) NOT NULL"
+		),
+
 	)
 );
